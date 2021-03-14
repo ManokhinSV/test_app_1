@@ -1,0 +1,29 @@
+.flex-box-row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-row-min {
+  flex: 0 0 auto;
+}
+
+.flex-row-max {
+  flex: 1 1 auto;
+}
+
+.flex-box-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-col-min {
+  flex: 0 0 auto;
+}
+
+.flex-col-max {
+  flex: 1 1 auto;
+}

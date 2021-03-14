@@ -1,0 +1,37 @@
+table, th, td {
+  border: 1px solid grey;
+}
+
+.users-table {
+    width: 100%;
+}
+
+th {
+  background-color: Highlight;
+  padding-left: 9px !important;
+}
+
+tr.mat-header-row {
+  height: 29px;
+}
+
+tr.mat-row, tr.mat-footer-row {
+  height: 29px;
+}
+
+.btn-as-link {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+  .btn-as-link.mat-button-disabled {
+    background-color: transparent;
+  }
+
+.btn-edit {
+  color: blue;
+}
+
+.btn-delete {
+  color: red;
+}

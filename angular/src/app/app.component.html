@@ -1,0 +1,20 @@
+<div class="flex-box-row">
+  <div class="flex-row-min">
+    <form-first></form-first>
+  </div>
+  <div class="flex-row-max">
+    <div class="flex-box-col">
+      <div class="flex-col-min">
+        <users-table [allowCopy]="true" [tableData]="tableUIService.editableTable | async" (onCopy)="copyTable()"></users-table>
+      </div>
+      <div class="flex-col-min" style="margin-top: 10px;" *ngFor="let t of tableStoreService.tablesStore | async">
+        <users-table [allowDelete]="true" [allowEdit]="true" [tableData]="t" (onDelete)="deleteTable(t)"></users-table>
+      </div>
+      <div class="flex-col-max"></div>
+    </div>
+  </div>
+  <div class="flex-row-min">
+    <form-first [view]="'horisontal'"></form-first>
+  </div>
+</div>
+<router-outlet></router-outlet>

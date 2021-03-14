@@ -1,0 +1,11 @@
+<div class="form-drag form-{{view}}" cdkDrag>
+    <input type="text" class="input-field" placeholder="Name" [(ngModel)]="user.name" (mousedown)="$event.stopPropagation()"/>
+    <br />
+    <input type="text" class="input-field" placeholder="Surname" [(ngModel)]="user.surname" (mousedown)="$event.stopPropagation()"/>
+    <br />
+    <input type="number" class="input-field input-horisontal-position" placeholder="Age" [(ngModel)]="user.age" (mousedown)="$event.stopPropagation()"/>
+    <br />
+    <input type="text" class="input-field input-horisontal-position" placeholder="City" [(ngModel)]="user.city" (mousedown)="$event.stopPropagation()"/>
+    <br />
+    <button type="button" class="btn-add input-horisontal-position" (click)="addUser()" (mousedown)="$event.stopPropagation()">ADD</button>
+</div>

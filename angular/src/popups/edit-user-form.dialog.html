@@ -1,0 +1,17 @@
+<div class="popup-content">
+  <div mat-dialog-title class="popup-header">
+    <span>Edit {{userName}}</span>
+    <button mat-icon-button class="btn-close" [mat-dialog-close]="null" (mousedown)="$event.stopPropagation()">
+      <mat-icon fontSet="fas" fontIcon="fa-times"></mat-icon>
+    </button>
+  </div>
+  <div mat-dialog-content>
+    <input type="text" class="input-field" placeholder="Name" [(ngModel)]="data.name" (mousedown)="$event.stopPropagation()" />
+    <input type="text" class="input-field" placeholder="Surname" [(ngModel)]="data.surname" (mousedown)="$event.stopPropagation()" />
+    <input type="text" class="input-field" placeholder="City" [(ngModel)]="data.city" (mousedown)="$event.stopPropagation()" />
+  </div>
+  <div mat-dialog-actions>
+    <mat-checkbox class="ch-totally-agree" [(ngModel)]="totallyAgree" (mousedown)="$event.stopPropagation()">Totally agree</mat-checkbox>
+    <button mat-button class="btn-save" [disabled]="!totallyAgree" [mat-dialog-close]="data" cdkFocusInitial (mousedown)="$event.stopPropagation()">SAVE</button>
+  </div>
+</div>
